@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hello World | Hexo</title>
+  <title>post响应 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="今日内容1. HTTP协议：响应消息 2. Response对象 3. ServletContext对象HTTP协议：1. 请求消息：客户端发送给服务器端的数据     * 数据格式：         1. 请求行         2. 请求头         3. 请求空行         4. 请求体 2. 响应消息：服务器端发送给客户端的数据     * 数据格式：         1. 响">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2019/05/23/hello-world/index.html">
+<meta property="og:title" content="post响应">
+<meta property="og:url" content="http://yoursite.com/2019/05/24/post响应/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="今日内容1. HTTP协议：响应消息 2. Response对象 3. ServletContext对象HTTP协议：1. 请求消息：客户端发送给服务器端的数据     * 数据格式：         1. 请求行         2. 请求头         3. 请求空行         4. 请求体 2. 响应消息：服务器端发送给客户端的数据     * 数据格式：         1. 响">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-23T10:05:17.511Z">
+<meta property="og:updated_time" content="2019-05-23T22:46:28.161Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="post响应">
+<meta name="twitter:description" content="今日内容1. HTTP协议：响应消息 2. Response对象 3. ServletContext对象HTTP协议：1. 请求消息：客户端发送给服务器端的数据     * 数据格式：         1. 请求行         2. 请求头         3. 请求空行         4. 请求体 2. 响应消息：服务器端发送给客户端的数据     * 数据格式：         1. 响">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -154,40 +154,77 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-post响应" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      post响应
     </h1>
   
 
         
-        <a href="/2019/05/23/hello-world/" class="archive-article-date">
-  	<time datetime="2019-05-23T10:05:17.511Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-23</time>
+        <a href="/2019/05/24/post响应/" class="archive-article-date">
+  	<time datetime="2019-05-23T22:46:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-24</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <h1 id="今日内容"><a href="#今日内容" class="headerlink" title="今日内容"></a>今日内容</h1><pre><code>1. HTTP协议：响应消息
+2. Response对象
+3. ServletContext对象</code></pre><h2 id="HTTP协议："><a href="#HTTP协议：" class="headerlink" title="HTTP协议："></a>HTTP协议：</h2><pre><code>1. 请求消息：客户端发送给服务器端的数据
+    * 数据格式：
+        1. 请求行
+        2. 请求头
+        3. 请求空行
+        4. 请求体
+2. 响应消息：服务器端发送给客户端的数据
+    * 数据格式：
+        1. 响应行
+            1. 组成：协议/版本 响应状态码 状态码描述
+            2. 响应状态码：服务器告诉客户端浏览器本次请求和响应的一个状态。
+                1. 状态码都是3位数字 
+                2. 分类：
+                    1. 1xx：服务器就收客户端消息，但没有接受完成，等待一段时间后，发送1xx多状态码
+                    2. 2xx：成功。代表：200
+                    3. 3xx：重定向。代表：302(重定向)，304(访问缓存)
+                    4. 4xx：客户端错误。
+                        * 代表：
+                            * 404（请求路径没有对应的资源） 
+                            * 405：请求方式没有对应的doXxx方法
+                    5. 5xx：服务器端错误。代表：500(服务器内部出现异常)
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+        2. 响应头：
+            1. 格式：头名称： 值
+            2. 常见的响应头：
+                1. Content-Type：服务器告诉客户端本次响应体数据格式以及编码格式
+                2. Content-disposition：服务器告诉客户端以什么格式打开响应体数据
+                    * 值：
+                        * in-line:默认值,在当前页面内打开
+                        * attachment;filename=xxx：以附件形式打开响应体。文件下载
+        3. 响应空行
+        4. 响应体:传输的数据
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+    * 响应字符串格式
+        HTTP/1.1 200 OK
+        Content-Type: text/html;charset=UTF-8
+        Content-Length: 101
+        Date: Wed, 06 Jun 2018 07:08:42 GMT
 
+        &lt;html&gt;
+          &lt;head&gt;
+            &lt;title&gt;$Title$&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+          hello , response
+          &lt;/body&gt;
+        &lt;/html&gt;</code></pre>
       
 
       
@@ -266,7 +303,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/05/23/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/05/24/post响应/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -280,15 +317,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/05/23/my-first-blog/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          my-first-blog
-        
-      </div>
-    </a>
   
+    <a href="/2019/05/23/my-first-blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">my-first-blog</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
